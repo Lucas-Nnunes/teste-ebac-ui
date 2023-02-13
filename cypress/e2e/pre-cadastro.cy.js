@@ -7,7 +7,7 @@ describe('Funcionalidade Pré cadastro', () => {
     });
     
 it('Deve completar o pré cadastro com sucesso', () => {
-    cy.get('#reg_email').type(faker.internet.email())
+    cy.get('#reg_email').type()
 });
 
 });
