@@ -12,7 +12,8 @@ describe('Funcionalidade Endereços - Faturamento e entrega', () => {
     });
 
     it.only('Deve fazer cadastro de faturamento com sucesso', () => {
-       EnderecoPage.editarEnderecoFaturamento()
+       EnderecoPage.editarEnderecoFaturamento('Lucas', 'Oliveira', 'Construção do corpo', 'Brasil', 'Av passa tempo', '288', 'Florianópolis', 'Santa Catarina', '45697000', '99842567', 'teste@mucilon.com')
+       cy.get('.woocommerce-message').should('contain' , 'Endereço alterado com sucesso.')
         
     });
 });
